@@ -8,6 +8,6 @@ if __name__ == "__main__":
     name = "Mohan"
     message = helper.greet(name)
     print(os.environ.get("PATH"))
-    result = subprocess.run("echo $MO", shell=True, capture_output=True, text=True)
+    result = subprocess.run("PWD", shell=True, capture_output=True, text=True)
     print(result.stdout)
     print(message)
